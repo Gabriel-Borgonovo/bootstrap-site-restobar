@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body class="bg-color-body">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-color-primario">
+            <div class="container">
+              <a class="navbar-brand color-parrafos-light" href="#">Navbar</a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="bi bi-list color-parrafos-light fs-2 fw-bold"></i>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu
+                    </a>
+                    <ul class="dropdown-menu bg-color-terciario">
+                      <li><a class="dropdown-item" href="index.html#pizzas">Pizzas</a></li>
+                      <li><a class="dropdown-item" href="index.html#lomitos">Lomitos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="index.html#hamburguesas">Hamburguesas</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+      <section class="pb-5">
+        <div id="carouselExampleCaptions" class="carousel slide" >
+         
+          <div class="position-absolute start-50 z-index translate-x-50 d-flex flex-column align-items-center justify-content-center">
+            <h1 class="color-titulos display-1 fw-bold text-shadow">Mi bar</h1>
+            <a href="menu.html" class="btn bg-color-terciario fw-semibold">Ver Menu</a>
+          </div>
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://i.pinimg.com/736x/49/0b/64/490b640ca8bb4726489296c98509fdb6.jpg" class="d-block w-100 img-fluid img-centrada" alt="...">
+              <div class="carousel-caption d-none d-md-block bg-color-primario rounded-4 max-width-500 mx-auto">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.lanacion.com.ar/resizer/v2/en-las-ultimas-horas-antes-de-la-efectivizacion-VN5JBANEZNDGHOFAF7A2QP3NFI.jpeg?auth=79c03b4869e99b4e0de61303af8db0c69d809ae4ac1ca568a2745645726c1a2b&width=420&height=280&quality=70&smart=false" class="d-block w-100 img-fluid img-centrada"  alt="...">
+              <div class="carousel-caption d-none d-md-block bg-color-primario rounded-4 max-width-500 mx-auto">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn.pixabay.com/photo/2016/10/04/05/21/bar-1713610_1280.jpg" class="d-block w-100 img-fluid img-centrada" alt="...">
+              <div class="carousel-caption d-none d-md-block bg-color-primario rounded-4 max-width-500 mx-auto">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section> 
+
+
+      <section class="container min-vh-100 d-flex align-items-center">
+        <article class="row align-items-center min-vh-lg-100">
+          <div class="col-12 col-md-6 order-md-1">
+            <img src="https://mui.kitchen/__export/1602638935970/sites/muikitchen/img/2020/10/13/4_desayunos_p.jpg_956698471.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-12 col-md-6 text-dark">
+            <h2>Desayunos y Meriendas</h2>
+            <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro corporis deleniti libero expedita illum nisi, aspernatur aut autem nam distinctio dignissimos magni tempora commodi, quos, quibusdam cum animi quidem. Eum.</p>
+            <p class="fs-5 d-none d-lg-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet sint dolores debitis possimus assumenda accusantium, ex tempora rerum error aliquam enim molestiae hic! Quasi nam omnis eligendi dolorum aliquam deserunt!</p>
+            <a href="./menu.html#desayunos" class="fs-5 fw-bold">Ver desayunos <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </article>
+      </section>
+
+      <section class="bg-color-primario min-vh-100 d-flex align-items-center">
+        <div class="container">
+        <article class="row align-items-center min-vh-lg-100">
+          <div class="col-12 col-md-6">
+            <img src="https://www.circuitogastronomico.com/wp-content/uploads/2022/11/el-meson-lomitodestacada.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-12 col-md-6 text-white">
+            <h2>Nuestros sandwiches</h2>
+            <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro corporis deleniti libero expedita illum nisi, aspernatur aut autem nam distinctio dignissimos magni tempora commodi, quos, quibusdam cum animi quidem. Eum.</p>
+            <p class="fs-5 d-none d-lg-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet sint dolores debitis possimus assumenda accusantium, ex tempora rerum error aliquam enim molestiae hic! Quasi nam omnis eligendi dolorum aliquam deserunt!</p>
+            <a href="./menu.html#sandwiches" class="fs-5 fw-bold">Ver sandwiches <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </article>
+      </div>
+      </section>
+
+      <section class="min-vh-100 d-flex align-items-center">
+        <div class="container">
+        <article class="row align-items-center min-vh-lg-100">
+          <div class="col-12 col-md-6 order-md-1">
+            <img src="https://editorialtelevisa.brightspotcdn.com/dims4/default/a6becec/2147483647/strip/true/crop/600x338+0+31/resize/1000x563!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2021%2F06%2Fpizza.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-12 col-md-6 text-dark">
+            <h2>Nuestras pizzas</h2>
+            <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro corporis deleniti libero expedita illum nisi, aspernatur aut autem nam distinctio dignissimos magni tempora commodi, quos, quibusdam cum animi quidem. Eum.</p>
+            <p class="fs-5 d-none d-lg-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet sint dolores debitis possimus assumenda accusantium, ex tempora rerum error aliquam enim molestiae hic! Quasi nam omnis eligendi dolorum aliquam deserunt!</p>
+            <a href="./menu.html#pizzas" class="fs-5 fw-bold">Ver pizzas <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </article>
+      </div>
+      </section>
+       
+      <section class="bg-color-primario min-vh-100 d-flex align-items-center">
+        <div class="container">
+        <article class="row align-items-center min-vh-lg-100">
+          <div class="col-12 col-md-6">
+            <img src="https://img.freepik.com/foto-gratis/deliciosa-pasta-plato_23-2150690835.jpg?w=2000" alt="" class="img-fluid">
+          </div>
+          <div class="col-12 col-md-6 text-white">
+            <h2>Nuestras pastas</h2>
+            <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro corporis deleniti libero expedita illum nisi, aspernatur aut autem nam distinctio dignissimos magni tempora commodi, quos, quibusdam cum animi quidem. Eum.</p>
+            <p class="fs-5 d-none d-lg-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet sint dolores debitis possimus assumenda accusantium, ex tempora rerum error aliquam enim molestiae hic! Quasi nam omnis eligendi dolorum aliquam deserunt!</p>
+            <a href="./menu.html#desayunos" class="fs-5 fw-bold">Ver pastas <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </article>
+      </div>
+      </section>
+
+      <section class="min-vh-100 d-flex align-items-center">
+        <div class="container">
+        <article class="row align-items-center min-vh-lg-100">
+          <div class="col-12 col-md-6 order-md-1">
+            <img src="https://2trendies.com/hero/2023/02/milanesas-de-pollo-al-horno.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-12 col-md-6 text-dark">
+            <h2>Nuestras Minutas</h2>
+            <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro corporis deleniti libero expedita illum nisi, aspernatur aut autem nam distinctio dignissimos magni tempora commodi, quos, quibusdam cum animi quidem. Eum.</p>
+            <p class="fs-5 d-none d-lg-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet sint dolores debitis possimus assumenda accusantium, ex tempora rerum error aliquam enim molestiae hic! Quasi nam omnis eligendi dolorum aliquam deserunt!</p>
+            <a href="./menu.html#minutas" class="fs-5 fw-bold">Ver minutas <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </article>
+      </div>
+      </section>
+
+      <section class="bg-color-primario min-vh-100 d-flex align-items-center">
+        <div class="container">
+        <article class="row align-items-center min-vh-lg-100">
+          <div class="col-12 col-md-6">
+            <img src="https://media.istockphoto.com/id/1020058210/es/foto/helados.jpg?s=612x612&w=0&k=20&c=rr0r_F6fxzhPusKpA5-3GNJ9KecGUDYsWIjLcVZ0shE=" alt="" class="img-fluid">
+          </div>
+          <div class="col-12 col-md-6 text-white">
+            <h2>Nuestros postres</h2>
+            <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro corporis deleniti libero expedita illum nisi, aspernatur aut autem nam distinctio dignissimos magni tempora commodi, quos, quibusdam cum animi quidem. Eum.</p>
+            <p class="fs-5 d-none d-lg-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet sint dolores debitis possimus assumenda accusantium, ex tempora rerum error aliquam enim molestiae hic! Quasi nam omnis eligendi dolorum aliquam deserunt!</p>
+            <a href="./menu.html#postres" class="fs-5 fw-bold">Ver postres <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </article>
+      </div>
+      </section>
+
+      <section class="min-vh-100 bg-image d-flex align-items-center" style="--image-png: url(../assets/bebidas2.png)" >
+        <div class="container">
+          <article class="row align-items-center min-vh-lg-100">
+            <div class="col-12 col-md-6 order-1">
+              <img src="./assets/marcas-bebidas.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6 text-white">
+              <h2>Nuestras bebidas</h2>
+              <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro corporis deleniti libero expedita illum nisi, aspernatur aut autem nam distinctio dignissimos magni tempora commodi, quos, quibusdam cum animi quidem. Eum.</p>
+              <p class="fs-5 d-none d-lg-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet sint dolores debitis possimus assumenda accusantium, ex tempora rerum error aliquam enim molestiae hic! Quasi nam omnis eligendi dolorum aliquam deserunt!</p>
+              <a href="./menu.html#bebidas" class="fs-5 fw-bold">Ver bebidas <i class="bi bi-chevron-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <section class="min-vh-100">
+      <div class="min-vh-100 container d-flex flex-column align-items-center justify-content-center">
+        <article class="text-center">
+          <h2 class="fs-1">Veni a conocernos</h2>
+          <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non ea voluptate provident eos fugit voluptatem aperiam atque id vel eveniet facere perferendis, iusto officiis at, nobis molestias sapiente eaque.</p>
+          <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+              <h3>¿Dónde nos encontramos?</h3>
+              <iframe class="mapa w-100 my-5 shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.384369511785!2d-63.909288525298706!3d-31.650702307616207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432cb00bd1e2bb1%3A0xe2f48132cfb0c13!2sDe%C3%A1n%20Funes%20942%2C%20X5000AAT%20R%C3%ADo%20Segundo%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1694718025630!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="col-12 col-lg-6 ps-lg-5">
+              <h3>¿Cómo nos podes contactar?</h3>
+              <form action="" class="pt-5">
+                <div class="mb-3 text-start">
+                  <label for="name" class="form-label">Nombre Completo</label>
+                  <input type="text" name="name" class="form-control" id="name" />
+                </div>
+                <div class="mb-3 text-start">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" name="email" class="form-control" id="email" />
+                </div>
+                <div class="mb-3 text-start">
+                  <label for="message" class="form-label">Mensaje</label>
+                  <textarea name="message" class="form-control" id="message" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Reservá tu lugar</button>
+              </form>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="h-50 bg-color-primario">
+      <section class="container">
+
+          <div class="w-100 p-5 d-flex justify-content-evenly align-items-center">
+            <a href="#" class="fs-3 color-redes"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="fs-3 color-redes"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="fs-3 color-redes"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="fs-3 color-redes"><i class="bi bi-tiktok"></i></a>
+          </div>
+          
+          <article class="d-flex justify-content-center align-items-center flex-column">
+          <h2 class="text-white align-self-start align-self-lg-center"><i class="bi bi-journal-text"></i> La carta</h2>
+          <ul class="w-75 list-unstyled pb-5 h-lg-150px d-flex flex-wrap flex-column align-items-start">
+            <li><a href="#menu.html#pizzas" class="fs-5">Pizzas</a></li>
+            <li><a href="#menu.html#lomitos" class="fs-5">Lomitos</a></li>
+            <li><a href="#menu.html#burguers" class="fs-5">Hamburguesas</a></li>
+            <li><a href="#menu.html#minutas" class="fs-5">Minutas</a></li>
+            <li><a href="#menu.html#pastas" class="fs-5">Pastas</a></li>
+            <li><a href="#menu.html#picadas" class="fs-5">Picadas</a></li>
+            <li><a href="#menu.html#postres" class="fs-5">Postres</a></li>
+            <li><a href="#menu.html#bebidas" class="fs-5">Bebidas</a></li>
+            <li><a href="#menu.html#desayunos" class="fs-5">Desayunos y meriendas</a></li>
+          </ul>
+        </article>
+
+        <div class="row">
+        <small class="text-white col-12 text-center p-5">
+          &copy; 2023 Gabriel Borgonovo. Plantilla para bares y restaurantes 
+          <a href="https://github.com/Gabriel-Borgonovo">ver portfolio</a>
+        </small>
+        </div>
+      </section>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

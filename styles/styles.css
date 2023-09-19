@@ -1,0 +1,205 @@
+/****Estilos generales***/
+
+:root{
+    --bg-color-primario: rgb(12, 0, 8);
+    --bg-color-secundario: white;
+    --bg-color-terciario: rgb(251, 255, 0);
+    --color-titulos: rgb(255, 255, 255);
+    --color-parrafos-light: rgb(255, 255, 255);
+    --color-parrafos-dark: black;
+    --bg-color-body: rgb(245, 241, 247);
+    --bg-color-alpha: rgba(0, 0, 0, 0.75);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/**Estilos bootstrap**/
+
+.nav-link{
+    color: var(--color-parrafos-light) !important;
+}
+
+.active{
+    color: var(--bg-color-terciario) !important;
+}
+
+
+
+.h-50{
+    min-height: 50vh;
+}
+
+
+
+.h-150px{
+    height: 150px;
+}
+
+.min-vh-30{
+    min-height: 30vh;
+}
+
+.end-20{
+    right: -15px;
+}
+
+
+
+
+
+/**Mis estilos**/
+
+.bg-color-primario{
+    background-color: var(--bg-color-primario);
+}
+
+.bg-color-secundario{
+    background-color: var(--bg-color-secundario);
+}
+
+.bg-color-terciario{
+    background-color: var(--bg-color-terciario);
+    transition: all .3s ease-out;
+}
+
+.bg-color-terciario:hover{
+    background-color: var(--bg-color-primario);
+    color: var(--color-titulos);
+}
+
+.bg-color-body{
+    background-color: var(--bg-color-body);
+}
+
+.bg-color-alpha{
+    background-color: var(--bg-color-alpha);
+}
+
+.color-titulos{
+    color: var(--color-titulos);
+}
+
+.color-parrafos-light{
+    color: var(--color-parrafos-light);
+}
+
+.color-parrafos-dark{
+    color: var(--color-parrafos-dark);
+}
+
+.color-terciario{
+    color: var(--bg-color-terciario);
+}
+
+.img-centrada{
+    object-fit: cover;
+    max-height: 80vh;
+}
+
+.z-index{
+    z-index: 10;
+}
+
+.translate-x-50{
+    transform: translateX(-50%);
+    top: 35%;
+}
+
+.translate-y-50{
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.max-width-500{
+    max-width: 500px;
+}
+
+.text-shadow{
+    text-shadow: 1px 1px 10px black;
+}
+
+.gap-50{
+    gap: 50px;
+}
+
+.bg-image{
+    background-image: var(--image-png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mapa{
+    height: 300px;
+}
+
+.color-redes{
+    color: var(--color-titulos);
+    transition: all .3s ease-out;
+}
+
+.color-redes:hover{
+    color: var(--bg-color-terciario);
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.w-90{
+    width: 90%;
+    max-width: 950px;
+}
+
+.color-btn-close{
+    color: var(--bg-color-secundario);
+}
+
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .end-20{
+        right: -20px;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .end-20{
+        right: -25px;
+    }
+    
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .min-vh-lg-100{
+        min-height: 100vh;
+    }
+
+    .h-lg-150px{
+        height: 150px;
+    }
+
+    .color-btn-close{
+        color: var(--bg-color-secundario);
+    }
+
+    .end-20{
+        right: 0px;
+    }
+  }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }

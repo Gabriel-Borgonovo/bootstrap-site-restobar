@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body class="bg-color-body">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-color-primario">
+            <div class="container">
+              <a class="navbar-brand color-parrafos-light" href="#">Navbar</a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="bi bi-list color-parrafos-light fs-2 fw-bold"></i>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu
+                    </a>
+                    <ul class="dropdown-menu bg-color-terciario">
+                      <li><a class="dropdown-item" href="menu.html#pizzas">Pizzas</a></li>
+                      <li><a class="dropdown-item" href="menu.html#lomitos">Lomitos</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="menu.html#hamburguesas">Hamburguesas</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+      <section class="min-vh-100">
+        <h1 class="text-center">Menu</h1>
+        <div class="text-center" >
+          <h2 class="text-center fs-4 py-5"><b><i class="bi bi-cup-hot-fill"></i></b> Nuestros Desayunos</h2>
+        </div>
+        
+        <article class="container cursor-pointer">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3 js">
+              <img src="./assets/cafe-chico.jpg" alt="Cafe-chico" class="img-fluid">
+                <small class="fs-5 text-center title">Cafe chiquito</small>
+                <small class="fs-5 text-center price">$<b>700</b></small>
+                <p>En este tamaño de taza puede ser cafe, cortado, o lagrima</p>
+                <p class="d-none description fs-5">El precio incluye un café chico tradicional, azucar o edulcorante en sobresitos y un vaso chico de soda.</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 js">
+              <img src="./assets/jarrito.jpg" alt="Cafe-chico" class="img-fluid">
+              <small class="fs-5 text-center title">Cafe jarrito</small>
+              <small class="fs-5 text-center price">$<b>900</b></small>
+              <p>En este tamaño de taza puede ser cafe, cortado, o lagrima</p>
+              <p class="d-none description fs-5">El precio incluye un café en una taza formato jarrito, azucar o edulcorante en sobresitos y un vaso chico de soda.</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 js">
+              <img src="./assets/desayuno-completo.jpg" alt="Cafe-chico" class="img-fluid">
+              <small class="fs-5 text-center title">Desayuno Completo</small>
+              <small class="fs-5 text-center price">$<b>1200</b></small>
+              <p>Cafe con leche - 2 medialunas o criollos - jugo de naranja exprimido.</p>
+              <p class="d-none description fs-5">El precio incluye un café con leche, azucar o edulcorante en sobresitos, 2 medialunas o criollos, y jugo de naranja exprimido.</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 js">
+              <img src="./assets/desayuno-light.jpg" alt="Cafe-chico" class="img-fluid">
+              <small class="fs-5 text-center title">Desayuno Light</small>
+              <small class="fs-5 text-center price">$<b>1350</b></small>
+              <p>Cafe con leche - 2 Tostadas de pan integral - mermelada - queso crema - jugo de naranja.</p>
+              <p class="d-none description fs-5">El precio incluye un café con leche, azucar o edulcorante en sobresitos, 2 tostadas de pan integral, mermelada de frutas, queso crema y jugo de naranja exprimido.</p>
+            </div>
+
+
+          </div> 
+        </article>
+
+        <div class="text-center" id="pizzas">
+          <h2 class="text-center fs-4 py-5"><b><i class="bi bi-cup-hot-fill"></i></b> Nuestras Pizzas</h2>
+        </div>
+
+        <article class="container cursor-pointer pb-5">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3 js-pizza">
+              <img src="./assets/muzza.jpg" alt="Pizza muzzarella" class="img-fluid">
+                <small class="fs-5 text-center title">Pizza Muzzarella</small>
+                <small class="fs-5 text-center price">$<b>1700</b></small>
+               <p class="d-none description fs-5">Pizza con masa cassera, queso muzzarella de excelente calidad, salsa roja, y aceitunas</p>
+               <p>Pizza con masa casera, queso muzzarella, salsa roja y aceitunas.</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 js-pizza">
+              <img src="./assets/pizza-especial.jpg" alt="Cafe-chico" class="img-fluid">
+              <small class="fs-5 text-center title">Pizza Especial</small>
+              <small class="fs-5 text-center price">$<b>2000</b></small>
+              <p>Pizza con masa casera, queso muzzarella, salsa roja, jamón cocido, morrones y aceitunas</p>
+              <p class="d-none description fs-5">Pizza con masa cassera, queso muzzarella de excelente calidad, salsa roja, jamón cocido, morrones, y aceitunas.</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 js-pizza">
+              <img src="./assets/celeste.jpg" alt="Cafe-chico" class="img-fluid">
+              <small class="fs-5 text-center title">Pizza Celeste</small>
+              <small class="fs-5 text-center price">$<b>2500</b></small>
+              <p>Pizza con masa casera, queso muzzarella, salsa roja, jamón cocido, papas fritas y aceitunas</p>
+              <p class="d-none description fs-5">Pizza con masa cassera, queso muzzarella de excelente calidad, salsa roja, jamón cocido, papas fritas, y aceitunas.</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 js-pizza">
+              <img src="./assets/calabresa.jpg" alt="Cafe-chico" class="img-fluid">
+              <small class="fs-5 text-center title">Pizza Calabresa</small>
+              <small class="fs-5 text-center price">$<b>2700</b></small>
+              <p>Pizza con masa casera, queso muzzarella, salsa roja, Salame y aceitunas</p>
+              <p class="d-none description fs-5">Pizza con masa cassera, queso muzzarella de excelente calidad, salsa roja, rodajas de salame, y aceitunas negras.</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="text-center"  id="sandwiches">
+          <h2 class="text-center fs-4 py-5"><b><i class="bi bi-cup-hot-fill"></i></b> Nuestros Sandwiches</h2>
+        </div>
+
+        <article class="container cursor-pointer pb-5">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3 js-lomo">
+              <img src="./assets/lomo-completo.jpg" alt="Pizza muzzarella" class="img-fluid">
+                <small class="fs-5 text-center title">Lomito Completo</small>
+                <small class="fs-5 text-center price">$<b>2700</b></small>
+               <p>Pan frances - carne de res - huevo - jamon - queso - lechuga - tomate - papas fritas.</p>
+               <p class="d-none description fs-5">Sandwich (lomo) con pan frances, bife de carne de res, fetas de jamon y de queso, huevo frito, hojas de lechuga fresca y rodajas de tomate. Incluye mayonesa casera y viene acompañado de papas fritas.</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 js-lomo">
+              <img src="./assets/sand-mila.jpg" alt="Cafe-chico" class="img-fluid">
+              <small class="fs-5 text-center title">Sandwich de Milanesa</small>
+              <small class="fs-5 text-center price">$<b>2300</b></small>
+              <p>Pan frances - Milanesa - huevo - jamon - queso - lechuga - tomate - papas fritas.</p>
+              <p class="d-none description fs-5">Sandwich de milanesa con pan frances, fetas de jamon y de queso, huevo frito, hojas de lechuga fresca y rodajas de tomate. Incluye mayonesa casera y viene acompañado de papas fritas.</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 js-lomo">
+              <img src="./assets/burguer.jpg" alt="Cafe-chico" class="img-fluid">
+              <small class="fs-5 text-center title">Hamburguesa Completa</small>
+              <small class="fs-5 text-center price">$<b>2100</b></small>
+              <p>Pan de papa - Hamburguesa - huevo - jamon - queso chedar - lechuga - tomate - papas fritas.</p>
+              <p class="d-none description fs-5">Sandwich de hamburguesa con pan de papa, fetas de jamon y de queso chedar, huevo frito, hojas de lechuga fresca y rodajas de tomate. Incluye mayonesa casera y viene acompañado de papas fritas</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 js-lomo">
+              <img src="./assets/lomo-arabe.jpg" alt="Cafe-chico" class="img-fluid">
+              <small class="fs-5 text-center title">Lomito con Pan Arabe</small>
+              <small class="fs-5 text-center price">$<b>3000</b></small>
+              <p>Pan de pita (pan arabe) - carne de res - huevo - jamon - queso - lechuga - tomate - papas fritas.</p>
+              <p class="d-none description fs-5">Sandwich (lomo) con pan de pita o también conocido como pan arabe (sin cascara), bife de carne de res, fetas de jamon y de queso, huevo frito, hojas de lechuga fresca y rodajas de tomate. Incluye mayonesa casera y viene acompañado de papas fritas.</p>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+
+     
+
+      <!-- ventana modal -->
+      <section class="position-fixed w-100 top-0 min-vh-100 bg-color-alpha d-flex flex-wrap align-items-center justify-content-center d-none" id="wModal">
+        <article class="w-90 rounded bg-color-primario row position-relative overflow-hidden" id="contentModal">
+
+          <button class="btn color-btn-close fw-bold col-2 col-lg-1 offset-10 offset-sm-11 offset-md-11 fs-3 position-absolute end-20"><i class="bi bi-x-lg"></i></button>
+
+          <div class="position-absolute col-12 translate-y-50 d-flex justify-content-between">
+            <button class="btn fs-2 color-terciario" id="prev"><i class="bi bi-chevron-left"></i></button>
+            <button class="btn fs-2 color-terciario" id="next"><i class="bi bi-chevron-right"></i></button>
+          </div>
+
+           <img src="" alt="imagen-modal" class="img-fluid col-12 col-sm-5 col-md-6 p-0" />
+           <div class="col-12 col-sm-6 col-md-5 bg-color-secundario">
+              <h2 class="modal-h2 pb-0 py-lg-2"></h2>
+              <h3 class="modal-h3 pb-1 pb-sm-1 pb-lg-5"></h3>
+             <p class="modal-p-text fs-5 pb-1 pb-lg-5"></p>
+           </div>
+        </article>
+      </section>
+      
+    </main>
+
+    <footer class="h-50 bg-color-primario">
+      <section class="container">
+
+          <div class="w-100 p-5 d-flex justify-content-evenly align-items-center">
+            <a href="#" class="fs-3 color-redes"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="fs-3 color-redes"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="fs-3 color-redes"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="fs-3 color-redes"><i class="bi bi-tiktok"></i></a>
+          </div>
+          
+          <article class="d-flex justify-content-center align-items-center flex-column">
+          <h2 class="text-white align-self-start align-self-lg-center"><i class="bi bi-journal-text"></i> La carta</h2>
+          <ul class="w-75 list-unstyled pb-5 h-lg-150px d-flex flex-wrap flex-column align-items-start">
+            <li><a href="#menu.html#pizzas" class="fs-5">Pizzas</a></li>
+            <li><a href="#menu.html#lomitos" class="fs-5">Lomitos</a></li>
+            <li><a href="#menu.html#burguers" class="fs-5">Hamburguesas</a></li>
+            <li><a href="#menu.html#minutas" class="fs-5">Minutas</a></li>
+            <li><a href="#menu.html#pastas" class="fs-5">Pastas</a></li>
+            <li><a href="#menu.html#picadas" class="fs-5">Picadas</a></li>
+            <li><a href="#menu.html#postres" class="fs-5">Postres</a></li>
+            <li><a href="#menu.html#bebidas" class="fs-5">Bebidas</a></li>
+            <li><a href="#menu.html#desayunos" class="fs-5">Desayunos y meriendas</a></li>
+          </ul>
+        </article>
+
+        <div class="row">
+        <small class="text-white col-12 text-center p-5">
+          &copy; 2023 Gabriel Borgonovo. Plantilla para bares y restaurantes 
+          <a href="https://github.com/Gabriel-Borgonovo">ver portfolio</a>
+        </small>
+        </div>
+      </section>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
